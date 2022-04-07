@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>File Upload using Express.js</title>
+    </head>
+
+    <body>
+        <!--
+            The enctype stands for encoding type, and the multipart/form-data type allows you to send files through an HTTP POST request.
+         -->
+        <form action="/upload/uploader" method="post" enctype="multipart/form-data"
+            style="border: 2px solid salmon;margin: 20%; padding: 1rem;display: flex; flex-direction: column; align-items: center;">
+            <input type="file" name="myFile">
+            <input type="file" name="myPicture">
+            <input type="file" name="myVideo">
+
+            <input type="submit" value="Upload">
+        </form>
+    </body>
+
+</html>
